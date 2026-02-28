@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffff;
+}
+
+.chess-board {
+    width: 90vmin;              /* Responsive width */
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    border: 5px solid #111;
+}
+
+/* 🔥 THIS MAKES PERFECT SQUARES */
+.chess-board div {
+    aspect-ratio: 1 / 1;        /* Equal height & width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5vmin;
+    color: white;
+}
+
+.light {
+    background: #2c2c2c;
+}
+
+.dark {
+    background: #0d0d0d;
+}
